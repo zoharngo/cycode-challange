@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.js": "/cycode-challange/static/js/main.bf00f99c.chunk.js",
-    "main.js.map": "/cycode-challange/static/js/main.bf00f99c.chunk.js.map",
-    "runtime-main.js": "/cycode-challange/static/js/runtime-main.454b0567.js",
-    "runtime-main.js.map": "/cycode-challange/static/js/runtime-main.454b0567.js.map",
-    "static/js/2.ed17e64a.chunk.js": "/cycode-challange/static/js/2.ed17e64a.chunk.js",
-    "static/js/2.ed17e64a.chunk.js.map": "/cycode-challange/static/js/2.ed17e64a.chunk.js.map",
-    "index.html": "/cycode-challange/index.html",
-    "static/js/2.ed17e64a.chunk.js.LICENSE.txt": "/cycode-challange/static/js/2.ed17e64a.chunk.js.LICENSE.txt"
+    "main.js": "/static/js/main.bf00f99c.chunk.js",
+    "main.js.map": "/static/js/main.bf00f99c.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.5b8a1bc8.js",
+    "runtime-main.js.map": "/static/js/runtime-main.5b8a1bc8.js.map",
+    "static/js/2.ed17e64a.chunk.js": "/static/js/2.ed17e64a.chunk.js",
+    "static/js/2.ed17e64a.chunk.js.map": "/static/js/2.ed17e64a.chunk.js.map",
+    "index.html": "/index.html",
+    "static/js/2.ed17e64a.chunk.js.LICENSE.txt": "/static/js/2.ed17e64a.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.454b0567.js",
+    "static/js/runtime-main.5b8a1bc8.js",
     "static/js/2.ed17e64a.chunk.js",
     "static/js/main.bf00f99c.chunk.js"
   ]
