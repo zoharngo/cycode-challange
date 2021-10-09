@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.js": "/cycode-challange/static/js/main.ff27caba.chunk.js",
+    "main.js.map": "/cycode-challange/static/js/main.ff27caba.chunk.js.map",
+    "runtime-main.js": "/cycode-challange/static/js/runtime-main.454b0567.js",
+    "runtime-main.js.map": "/cycode-challange/static/js/runtime-main.454b0567.js.map",
+    "static/js/2.ed17e64a.chunk.js": "/cycode-challange/static/js/2.ed17e64a.chunk.js",
+    "static/js/2.ed17e64a.chunk.js.map": "/cycode-challange/static/js/2.ed17e64a.chunk.js.map",
+    "index.html": "/cycode-challange/index.html",
+    "static/js/2.ed17e64a.chunk.js.LICENSE.txt": "/cycode-challange/static/js/2.ed17e64a.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.454b0567.js",
+    "static/js/2.ed17e64a.chunk.js",
+    "static/js/main.ff27caba.chunk.js"
+  ]
+}
