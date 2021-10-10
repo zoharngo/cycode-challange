@@ -32,7 +32,7 @@ export default function TabsContainer() {
             <Home />
           </TabPanel>
         </Route>
-        <Route exact path='/register'>
+        <Route path='/register'>
           <TabPanel index={1}>
             <Register />
           </TabPanel>
