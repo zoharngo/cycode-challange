@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import SearchIcon from '@mui/icons-material/Search';
 import PropTypes from 'prop-types';
-import { InputLabel, TextField } from '@mui/material';
+import { InputLabel, TextField, Typography } from '@mui/material';
 import InputAdornment from '@mui/material/InputAdornment';
 import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 import ArrowDropUpIcon from '@mui/icons-material/ArrowDropUp';
@@ -15,7 +15,9 @@ const CustomTextField = ({ name, label, label2, onChange, onArrowDropClick, open
 
   return (
     <React.Fragment>
-      {label && <InputLabel htmlFor={name}>{label}</InputLabel>}
+      <InputLabel htmlFor={name}>
+        <Typography component='label' variant='caption'>{label}</Typography>
+      </InputLabel>
       <TextField
         InputProps={{
           endAdornment: (

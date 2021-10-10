@@ -35,8 +35,10 @@ export default function Home() {
               return (
                 <ListItem key={index}>
                   <ListItemText>
-                    {`${user.firstName} ${user.lastName} `}
-                    <strong>Subscribed!</strong>
+                    <Typography variant='subtitle1'>
+                      {`${user.firstName} ${user.lastName} `}
+                      <strong>Subscribed!</strong>
+                    </Typography>
                   </ListItemText>
                 </ListItem>
               );

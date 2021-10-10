@@ -1,4 +1,4 @@
-import React, { useState, useCallback } from 'react';
+import React, { useState, useCallback, useMemo } from 'react';
 import List from '@mui/material/List';
 import ListItem from '@mui/material/ListItem';
 import ListItemButton from '@mui/material/ListItemButton';
@@ -37,16 +37,19 @@ export default function RadioSelect({
     toggleOpen(false);
   };
 
-  const selectedValueName = useCallback(() => {
+  const selectedValueName = useMemo(() => {
     let displayText = '';
-    const selectedElement = elements.find((elem) => elem.id === selectedValue);
+    const selectedElement = items.find((elem) => elem.id === selectedValue);
     if (selectedElement) {
       displayFields.forEach((field) => {
         displayText += selectedElement[field] + ' ';
       });
     }
-    return displayText;
-  }, [displayFields, elements, selectedValue]);
+    if (Boolean(displayText)) {
+      return `${displayText} selected`;
+    }
+    return 'select organization:';
+  }, [displayFields, items, selectedValue]);
 
   const onTextFieldChange = useCallback(
     (e) => {
@@ -63,13 +66,13 @@ export default function RadioSelect({
     },
     [displayFields, items]
   );
-
+  console.log(selectedValueName);
   return (
     <ClickAwayListener onClickAway={() => toggleOpen(false)}>
       <Box>
         <CustomTextField
           label2={label}
-          label={(selectedValue && `${selectedValueName()} selected`) || 'select organization'}
+          label={selectedValueName}
           name='org-search-bar'
           open={open}
           onClickAway={() => toggleOpen(false)}
