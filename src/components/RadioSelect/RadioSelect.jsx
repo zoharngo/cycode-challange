@@ -38,11 +38,13 @@ export default function RadioSelect({
   };
 
   const selectedValueName = useCallback(() => {
-    const selectedElement = elements.find((elem) => elem.id === selectedValue);
     let displayText = '';
-    displayFields.forEach((field) => {
-      displayText += selectedElement[field] + ' ';
-    });
+    const selectedElement = elements.find((elem) => elem.id === selectedValue);
+    if (selectedElement) {
+      displayFields.forEach((field) => {
+        displayText += selectedElement[field] + ' ';
+      });
+    }
     return displayText;
   }, [displayFields, elements, selectedValue]);
 
