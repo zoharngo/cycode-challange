@@ -16,25 +16,25 @@ function a11yProps(index) {
 }
 
 export default function TabsContainer() {
-  const routeMatch = useRouteMatch(['*/register', '/']);
+  const routeMatch = useRouteMatch(['/register', '/']);
   const currentTab = routeMatch?.path;
   return (
     <Box sx={{ width: '100%' }}>
       <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
         <Tabs value={currentTab} aria-label='tab-nav-bar'>
           <Tab label='Home' {...a11yProps(0)} value='/' to='/' component={Link} />
-          <Tab label='Register' {...a11yProps(1)} value='*/register' to='/register' component={Link} />
+          <Tab label='Register' {...a11yProps(1)} value='/register' to='/register' component={Link} />
         </Tabs>
       </Box>
       <Switch>
-        <Route exact path='/'>
-          <TabPanel index={0}>
-            <Home />
-          </TabPanel>
-        </Route>
-        <Route path='*/register'>
+        <Route path='/register'>
           <TabPanel index={1}>
             <Register />
+          </TabPanel>
+        </Route>
+        <Route exact path='/*'>
+          <TabPanel index={0}>
+            <Home />
           </TabPanel>
         </Route>
       </Switch>
